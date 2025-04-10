@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std ;
+int main(){
+    // 
+    int n  ;
+    cout<<"Enter the number of elements " ;
+    cin>>n;
+    cout<<"Enter the elements of array :";
+    int arr[n];
+    for(int i = 0 ; i< n ; i++){
+        cin>>arr[i];
+    }
+    cout<<"Array is: ";
+    for(int i = 0; i < n ; i++){
+        cout<<arr[i]<<" ";
+    } 
+     cout<<endl ;
+    int maxele = arr[0] ;
+    int minele = arr[0] ;
+    for(int i = 0; i < n ; i++){
+      
+
+        maxele = max(maxele , arr[i]);
+        minele = min(minele , arr[i]);
+
+}
+  cout<<"Maximum element is : "<<maxele <<endl;
+  cout<<"Minimum element is : "<<minele <<endl;
+
+
+}
