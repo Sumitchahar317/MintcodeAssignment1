@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std ;
+int main(){
+ int n;
+ cout<<"Enter the number :";
+ cin>>n;
+
+ int sum = 0 ;
+ for(int j = 1 ;  j< n ; j++){
+    if (n % j == 0) {
+       sum+=j ;
+    }
+ }
+
+ if(sum == n )
+  cout<<"Yes "<<n<<" is a perfect number  ";
+  else 
+  cout<<"No "<<n<<" is not a perfect number  ";
+}
